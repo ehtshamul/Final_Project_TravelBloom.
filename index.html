@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBloom - Discover Your Next Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-globe-americas"></i>
+      TravelBloom
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore the World, Discover Yourself</h1>
+      <p>Embark on cultural journeys that connect you with ancient traditions, vibrant communities, and breathtaking landscapes. Let TravelBloom guide you to destinations that inspire wonder and create lasting memories.</p>
+      
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search destinations, activities, or keywords...">
+          <button id="searchBtn" class="search-btn">Search</button>
+        </div>
+        <div id="searchSuggestions" class="search-suggestions"></div>
+      </div>
+      
+      <div class="hero-buttons">
+        <button class="book-now-btn">
+          <i class="fas fa-plane"></i>
+          Book Now
+        </button>
+        <button class="explore-btn">
+          <i class="fas fa-compass"></i>
+          Explore Destinations
+        </button>
+      </div>
+    </div>
+    
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <section class="recommendations">
+    <h2>Discover Your Perfect Destination</h2>
+    
+    <div class="search-results" id="searchResults">
+      <!-- Dynamic search results will be displayed here -->
+    </div>
+
+    <div class="card-group" id="beachDestinations">
+      <h3><i class="fas fa-umbrella-beach"></i> Beach Destinations</h3>
+      <div class="cards">
+        <div class="card" data-category="beach" data-destination="maldives">
+          <div class="card-img" style="background-image: url('beach 1.webp');">
+            <div class="card-overlay">
+              <button class="book-card-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h4>Maldives Paradise</h4>
+            <p>Relax in crystal clear waters and pristine white sands of the Maldives.</p>
+            <div class="card-tags">
+              <span class="tag">Luxury</span>
+              <span class="tag">Romance</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-category="beach" data-destination="bali">
+          <div class="card-img" style="background-image: url('beach2.webp');">
+            <div class="card-overlay">
+              <button class="book-card-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h4>Bali Tropical Escape</h4>
+            <p>Unwind on Bali's tropical beaches surrounded by lush greenery and culture.</p>
+            <div class="card-tags">
+              <span class="tag">Culture</span>
+              <span class="tag">Adventure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group" id="templeExperiences">
+      <h3><i class="fas fa-pray"></i> Cultural & Temple Experiences</h3>
+      <div class="cards">
+        <div class="card" data-category="temple" data-destination="angkor-wat">
+          <div class="card-img" style="background-image: url('temple1.jpeg');">
+            <div class="card-overlay">
+              <button class="book-card-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h4>Angkor Wat, Cambodia</h4>
+            <p>Marvel at the ancient beauty and spiritual significance of Angkor Wat.</p>
+            <div class="card-tags">
+              <span class="tag">History</span>
+              <span class="tag">Spiritual</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-category="temple" data-destination="meiji-shrine">
+          <div class="card-img" style="background-image: url('temple2.jpeg');">
+            <div class="card-overlay">
+              <button class="book-card-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h4>Meiji Shrine, Tokyo</h4>
+            <p>Find peace and tranquility at Japan's iconic Meiji Shrine.</p>
+            <div class="card-tags">
+              <span class="tag">Peaceful</span>
+              <span class="tag">Traditional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group" id="countryDestinations">
+      <h3><i class="fas fa-flag"></i> Country Destinations</h3>
+      <div class="cards">
+        <div class="card" data-category="country" data-destination="japan">
+          <div class="card-img" style="background-image: url('country1.jpeg');">
+            <div class="card-overlay">
+              <button class="book-card-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h4>Japan - Land of Contrasts</h4>
+            <p>Experience Tokyo's energy and Mt. Fuji's serene beauty in Japan.</p>
+            <div class="card-tags">
+              <span class="tag">Modern</span>
+              <span class="tag">Traditional</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-category="country" data-destination="italy">
+          <div class="card-img" style="background-image: url('country2.jpeg');">
+            <div class="card-overlay">
+              <button class="book-card-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h4>Italy - Historic Beauty</h4>
+            <p>Explore Italy's historic cities — Venice, Rome, and beyond.</p>
+            <div class="card-tags">
+              <span class="tag">History</span>
+              <span class="tag">Art</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="socials">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TravelBloom</h4>
+        <p>Your gateway to extraordinary travel experiences</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 TravelBloom. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
